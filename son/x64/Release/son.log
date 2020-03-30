@@ -1,0 +1,25 @@
+﻿  son.c
+cli.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip6_addr".
+cli.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip4_addr".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_loop_init".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_run".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_loop_close".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_buf_init".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_tcp_init".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_tcp_bind".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_listen".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_err_name".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_udp_init".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_udp_bind".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_udp_recv_start".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip4_name".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip6_name".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_strerror".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_accept".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_tcp_connect".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_read_start".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_close".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_write".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_udp_send".
+proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_udp_set_broadcast".
+E:\Dokumente\VisualStudioProjects\son\x64\Release\son.exe : fatal error LNK1120: 23 nicht aufgelöste Externe

@@ -1,0 +1,4 @@
+﻿  proxy.c
+e:\dokumente\visualstudioprojects\son\son\proxy.c(121): warning C4090: "Funktion": Unterschiedliche "const"-Qualifizierer
+e:\dokumente\visualstudioprojects\son\son\proxy.c(122): warning C4090: "Funktion": Unterschiedliche "const"-Qualifizierer
+  son.vcxproj -> E:\Dokumente\VisualStudioProjects\son\Debug\son.exe

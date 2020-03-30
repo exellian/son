@@ -1,0 +1,110 @@
+﻿  Validating sources
+  Copying sources remotely to 'localhost'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  buffer.c
+E:\Dokumente\VisualStudioProjects\son\son_linux\buffer.c(13,45): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\buffer.c(13,45): warning :   bufbase_t *base = malloc(sizeof(bufbase_t) + len);
+E:\Dokumente\VisualStudioProjects\son\son_linux\buffer.c(13,45): warning :                                              ^
+  cli.c
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(11,7): warning : implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(11,7): warning :    if (strcmp(argv[1], "-help") == 0) {
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(11,7): warning :        ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(41,2): warning : suggest parentheses around assignment used as truth value [-Wparentheses]
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(57,12): warning : implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(57,12): warning :   int len = strlen(arg);
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(57,12): warning :             ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(57,12): warning : incompatible implicit declaration of built-in function ‘strlen’
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(57,12): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+E:\Dokumente\VisualStudioProjects\son\son_linux\cli.c(57,12): warning : conversion to ‘int’ from ‘long unsigned int’ may alter its value [-Wconversion]
+  proxy.c
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(122,7): warning : passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(122,7): warning :   free(proxy->ipv4_wildcard);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(122,7): warning :        ^
+/usr/include/stdlib.h(483,13): message : expected ‘void *’ but argument is of type ‘const struct sockaddr *’
+/usr/include/stdlib.h(483,13): message :  extern void free (void *__ptr) __THROW;
+/usr/include/stdlib.h(483,13): message :              ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(123,7): warning : passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(123,7): warning :   free(proxy->ipv6_wildcard);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(123,7): warning :        ^
+/usr/include/stdlib.h(483,13): message : expected ‘void *’ but argument is of type ‘const struct sockaddr *’
+/usr/include/stdlib.h(483,13): message :  extern void free (void *__ptr) __THROW;
+/usr/include/stdlib.h(483,13): message :              ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(278,57): warning : implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(278,57): warning :    if ((information->port == peer->information.port) && (strcmp(information->ip, peer->information.ip) == 0)) {
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(278,57): warning :                                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(324,17): warning : cast from pointer to integer of different size [-Wpointer-to-int-cast]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(324,17): warning :    printf(" %i", (int)peer->tunnel);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(324,17): warning :                  ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(475,15): warning : implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(475,15): warning :   size_t len = strlen(information->ip);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(475,15): warning :                ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(475,15): warning : incompatible implicit declaration of built-in function ‘strlen’
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(475,15): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(479,13): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(479,13): warning :   size_t n = information->port;
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(479,13): warning :              ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(478,9): warning : unused variable ‘q’ [-Wunused-variable]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(478,9): warning :   size_t q = 0;
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(478,9): warning :          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(586,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(586,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(586,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(599,39): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(599,39): warning :    init_pending(uv_buf_init(buf->base, nread), pending);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(599,39): warning :                                        ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(604,42): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(604,42): warning :    init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(604,42): warning :                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(620,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(620,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(620,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(631,41): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(631,41): warning :   init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(631,41): warning :                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(676,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(676,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(676,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(689,39): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(689,39): warning :    init_pending(uv_buf_init(buf->base, nread), pending);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(689,39): warning :                                        ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(695,42): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(695,42): warning :    init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(695,42): warning :                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(712,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(712,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(712,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(759,41): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(759,41): warning :   init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(759,41): warning :                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(942,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(942,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(942,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(954,41): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(954,41): warning :   init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(954,41): warning :                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(969,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(969,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(969,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(980,41): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(980,41): warning :   init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(980,41): warning :                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(995,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(995,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(995,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1006,41): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1006,41): warning :   init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1006,41): warning :                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1022,58): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1022,58): warning :     fprintf(stderr, "Server read error %s\n", uv_err_name(nread));
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1022,58): warning :                                                           ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1032,41): warning : conversion to ‘unsigned int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1032,41): warning :   init_write_data(uv_buf_init(buf->base, nread), tunnel, write_data);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1032,41): warning :                                          ^
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1038,21): warning : unused variable ‘info’ [-Wunused-variable]
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1038,21): warning :   peer_information_t info = get_peer_information(tunnel->local_addr);
+E:\Dokumente\VisualStudioProjects\son\son_linux\proxy.c(1038,21): warning :                      ^
+  son.c
+  Linking objects
+  son_linux.vcxproj -> E:\Dokumente\VisualStudioProjects\son\son_linux\bin\x64\Release\son_linux.out
