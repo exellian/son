@@ -1,5 +1,4 @@
-﻿  son.c
-cli.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip6_addr".
+﻿cli.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip6_addr".
 cli.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_ip4_addr".
 proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_loop_init".
 proxy.obj : error LNK2001: Nicht aufgelöstes externes Symbol "uv_run".

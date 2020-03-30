@@ -1,4 +1,10 @@
-﻿  proxy.c
+﻿  stdafx.c
+  buffer.c
+  cli.c
+  proxy.c
 e:\dokumente\visualstudioprojects\son\son\proxy.c(121): warning C4090: "Funktion": Unterschiedliche "const"-Qualifizierer
 e:\dokumente\visualstudioprojects\son\son\proxy.c(122): warning C4090: "Funktion": Unterschiedliche "const"-Qualifizierer
+e:\dokumente\visualstudioprojects\son\son\proxy.c(1037): warning C4101: "info": Unreferenzierte lokale Variable
+  son.c
+  Code wird generiert...
   son.vcxproj -> E:\Dokumente\VisualStudioProjects\son\Debug\son.exe
