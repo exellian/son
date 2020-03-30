@@ -3,7 +3,7 @@ Simple proxy tool for windows and linux based on libuv
 
 ## Example:
 
-# double redirect udp traffic for GMOD server:
+### double redirect udp traffic for GMOD server:
 
 Public Server:
 ./son.out udp4:0.0.0.0:27015 udp6:[2001:0db8:85a3:0000:0000:8a2e:0370:7334]:27015
